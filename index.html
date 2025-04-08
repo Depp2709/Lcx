@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Tracker</title>
+    <title>Link Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Selamat datang di Website Tracker</h1>
-    <p>Jumlah pengunjung saat ini: <span id="visitorCount">0</span></p>
+    <div class="container">
+        <h1>Buat Link Tracker</h1>
+        <input type="text" id="urlInput" placeholder="Masukkan URL di sini" />
+        <button id="generateButton">Buat Link Tracker</button>
+        <h2>Link Tracker Anda:</h2>
+        <p id="trackerLink"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
