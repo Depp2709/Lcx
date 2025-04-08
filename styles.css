@@ -4,10 +4,29 @@ body {
     margin-top: 50px;
 }
 
-h1 {
-    color: #333;
+.container {
+    max-width: 600px;
+    margin: auto;
 }
 
-p {
-    font-size: 20px;
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    margin-top: 20px;
 }
