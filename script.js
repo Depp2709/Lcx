@@ -1,16 +1,15 @@
-// Mengambil jumlah pengunjung dari localStorage
-let visitorCount = localStorage.getItem('visitorCount');
+document.getElementById('generateButton').addEventListener('click', function() {
+    const urlInput = document.getElementById('urlInput').value;
+    
+    // Validasi URL
+    if (!urlInput) {
+        alert('Silakan masukkan URL yang valid.');
+        return;
+    }
 
-// Jika belum ada, set visitorCount ke 0
-if (!visitorCount) {
-    visitorCount = 0;
-}
-
-// Tambahkan 1 ke jumlah pengunjung
-visitorCount++;
-
-// Simpan kembali ke localStorage
-localStorage.setItem('visitorCount', visitorCount);
-
-// Tampilkan jumlah pengunjung di halaman
-document.getElementById('visitorCount').innerText = visitorCount;
+    // Buat link tracker (misalnya, menambahkan parameter query)
+    const trackerLink = `${urlInput}?tracker=${new Date().getTime()}`;
+    
+    // Tampilkan link tracker
+    document.getElementById('trackerLink').innerText = trackerLink;
+});
